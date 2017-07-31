@@ -1,0 +1,172 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.para1, .para2, .para3 {
+	position: relative;
+	opacity: 0.80;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	
+}
+
+.para1 {
+	background-image: url('../img/img1.jpeg');
+	min-height: 100%;
+}
+
+.para2 {
+	background-image: url('../img/img2.jpeg');
+	min-height: 500px;
+}
+
+.para3 {
+	background-image: url('../img/img3.jpeg');
+	min-height: 500px;
+}
+
+.section {
+	text-align: center;
+	padding: 20px 50px;
+	background-color: #f2f2f2;
+	box-shadow: 0 15px 5px black;
+}
+
+.back-to {
+	padding: 8px;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+.text {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: black;
+	font-size: 20px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+}
+
+.border {
+	background-color: white;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+
+.text-title {
+	font-size: 25px;
+	color: white;
+}
+
+.text-sub {
+	font-size: 12px;
+	top: 60%;
+	letter-spacing: 5px;
+}
+
+.text-title .border {
+	background-color: black;
+	border: 1px solid white;
+}
+
+
+.profile {
+	text-align: center;
+}
+
+.profile-pic img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+.lightbox img{
+	filter: grayscale(100%);
+	transition: .5s;
+	width: 100%;
+	height: 100%;
+}
+
+.lightbox img:hover {
+	filter: none;
+}
+
+@media screen and (min-width: 768px) {
+
+.para1, .para2, .para3 {
+	background-attachment: fixed;
+}
+
+.about {
+	display: flex;
+	align-items: stretch;
+}
+
+.lightbox {
+	width: 50%;
+
+}
+
+.profile {
+	text-align: left;
+}
+
+.profile-pic img {
+	margin-top: 20px;
+	width: 100%;
+
+}
+
+.profile-pic {
+	width: 100%;
+	margin-right: 50px;
+}
+
+.section {
+	padding: 20px 100px;
+}
+
+
+
+}
+
+
+@media screen and (min-width: 1170px) {
+	
+
+
+.about {
+	
+	align-items: center;
+}
+
+.container {
+	flex-wrap: nowrap;
+}
+
+}
